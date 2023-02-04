@@ -1,0 +1,64 @@
+.explorer {
+  width: 172px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #e1e4e8;
+  background-color: var(--explorer-bg);
+  border-right: 1px solid var(--explorer-border);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* text-transform: uppercase의 효과 */
+.title {
+  font-weight: 300;
+  padding: 8px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: black;
+}
+
+/* uppercase를 활용하면 js파일에서 소문자로 썼더라도 대문자 효과를 받는다, 색깔은 추후 #fff로 변경 */
+.heading {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.heading .icon {
+  transition: 0.3s;
+}
+
+/* justify-self의 의미를 확인, 색깔은 추후 #fff로 변경 */
+.file {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  padding: 2px 8px;
+  margin-bottom: 4px;
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.file:hover {
+  background-color: var(--explorer-hover-bg);
+}
+
+/* icon 과 텍스트 사이의 간격을 오른쪽으로 6px만큼 벌어짐 */
+.file .icon {
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .explorer {
+    display: none;
+  }
+}

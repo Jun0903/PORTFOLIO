@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+
+.nav {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  background-color: var(--titlebar-bg);
+  font-size: 0.85rem;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  border-bottom: 1px solid #191d20;
+}
+
+.nav_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+}
+
+.icon {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.nav_title {
+}
+
+.macbutton_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+}
+
+.macbutton {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.macbutton_red {
+  background-color: #ec6a5e;
+}
+
+.macbutton_yellow {
+  background-color: #f4be4f;
+}
+
+.macbutton_green {
+  background-color: #61c555;
+}

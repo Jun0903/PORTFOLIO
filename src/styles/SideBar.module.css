@@ -1,0 +1,41 @@
+.sidebar {
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid #191d20;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+}
+
+/* hover는 마우스를 가져다 댔을 때 변하는 색깔이다 */
+/* transparent 의 의미 이해 , border가 0이기 때문에 가지고 왔을때 기존의 선들이 없어짐*/
+.top button,
+.bottom button {
+  width: 100%;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.top button:hover,
+.bottom button:hover {
+  background-color: var(--sidebar-hover-bg);
+}
+
+.top button:hover .icon,
+.bottom button:hover .icon {
+  fill: rgb(225, 228, 232);
+}
+
+.top button.active,
+.bottom button.active {
+  border-left: 2px solid var(--accent-color);
+  background-color: var(--sidebar-hover-bg);
+}
