@@ -17,7 +17,7 @@ const Home = () => {
         <div className={style.buttons}>
           <button
             onClick={() => {
-              navigate("/projects");
+              navigate("/project");
             }}
             className={`${style.button} ${style.button_work}`}
           >
