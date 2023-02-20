@@ -17,7 +17,7 @@ const sideTopItems = [
   },
   {
     Icon: SearchIcon,
-    path: "/projects",
+    path: "/project",
   },
   {
     Icon: PencilIcon,
