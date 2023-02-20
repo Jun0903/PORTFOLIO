@@ -1,0 +1,23 @@
+/* counter-reset 속성으로 순번 증가를 위해 사용하는 사용자 정의 변수명과 순번의 시작 값을 정의 */
+
+.codeblock {
+  counter-reset: line;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.codeblock a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.codeblock a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .codeblock {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+}

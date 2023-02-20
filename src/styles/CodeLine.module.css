@@ -1,0 +1,22 @@
+/* flex-wrap: 플렉스 아이템들이 강제로 한줄에 배치되게 할 것인지, 또는 가능한 영역 내에서 벗어나지 않고 여러행으로 나누어 표현할지 결정하는 속성 */
+/* nowrap : 기본값, 공간이 부족하더라도 요소를 한줄에 배치 */
+.codeline {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.codeline::before {
+  content: counter(line);
+  counter-increment: line;
+  margin-right: 1rem;
+  color: grey;
+  min-width: 25px;
+}
+
+/* @media screen 이란 무엇인가 -> 모든 화면 장치 */
+@media screen and (max-width: 600px) {
+  .codeline::before {
+    min-width: 16px;
+  }
+}
