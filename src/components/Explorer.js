@@ -27,8 +27,8 @@ const Files = [
   },
   {
     Icon: JsIcon,
-    path: "/projects",
-    title: "projects.js",
+    path: "/project",
+    title: "project.js",
   },
   {
     Icon: JsonIcon,
@@ -58,7 +58,7 @@ const Explorer = () => {
       >
         <BehindIcon
           className={style.icon}
-          style={toggle_menu ? { transform: "roatate(90deg)" } : {}}
+          style={toggle_menu ? { transform: "rotate(90deg)" } : {}}
         />
         Portfolio
       </div>
