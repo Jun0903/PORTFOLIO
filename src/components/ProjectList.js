@@ -1,5 +1,6 @@
 import style from "./../styles/ProjectList.module.css";
 
+// 만약 배열의 원소에 고유한 값이 없을 경우, map내장함수의 콜백함수의 두번째 파라미터에서는 idx를 key로 설정해야 한다.
 const ProjectList = ({ project }) => {
   return (
     <div className={style.list}>
@@ -9,9 +10,9 @@ const ProjectList = ({ project }) => {
           src={project.image}
           alt={project.description}
         />
-        {/* <div className={style.copy_tag}>
+        <div className={style.copy_tag}>
           {project.copy === "personal" ? "🙋🏻‍♂️" : "🏢"} {project.copy}
-        </div> */}
+        </div>
       </div>
       <div className={style.list_content}>
         <h4 className={style.list_title}>{project.name}</h4>

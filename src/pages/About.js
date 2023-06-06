@@ -123,7 +123,7 @@ const About = () => {
               <dd>- 크로스브라우징 & 시맨틱 마크업을 준수합니다.</dd>
               <dd>- 반응형 / 적응형 개발 경험이 있습니다.</dd>
               <dd>- 애니메이션 속성을 이용할 수 있습니다.</dd>
-              <dd>- </dd>
+              <dd>- 기본적인 css 이용법을 알고있습니다.</dd>
               <dd></dd>
             </dl>
           </TagContent>
@@ -184,6 +184,29 @@ const About = () => {
               <dd>
                 - 데이터를 불러오는데 fetch문 뿐만이 아니라 axios를 통해서도
                 불러 올 수 있습니다.
+              </dd>
+              <dd>- 반응형 웹 개발을 해 본 경험이 있습니다.</dd>
+            </dl>
+          </TagContent>
+        </CodeLine>
+        <CodeLine />
+        <CodeLine>
+          <TagContent indent={6}>
+            <dl>
+              <dt>
+                <em>Typescript</em>
+              </dt>
+              <dd>
+                - 객체의 타입을 명확하게 정의하기 위해 interface로 구현 할 수
+                있습니다.
+              </dd>
+              <dd>
+                - 한 타입 보다는 여러 타입에서 동작하는 컴포넌트를 만들기 위해서
+                제너릭을 생성 할 수 있습니다.
+              </dd>
+              <dd>- 오픈 소스를 가져와서 API 적용 할 수 있습니다.</dd>
+              <dd>
+                - typescript 개인 프로젝트에서 darkmode 적용을 해보았습니다.
               </dd>
             </dl>
           </TagContent>
